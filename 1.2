@@ -1,0 +1,34 @@
+#include <stdio.h>
+#include <conio.h>
+//Khai báo dữ liệu hỗn số
+struct HonSo
+{
+    int iNguyen;
+    int iTu;
+    int iMau;
+};
+// Nhập hỗn số
+void Nhap(HonSo &a)
+{
+    printf("\nNhap phan nguyen: ");
+    scanf_s("%d",&a.iNguyen);
+    printf("\nNhap tu so: ");
+    scanf_s("%d",&a.iTu);
+    printf("\nNhap mau so: ");
+    scanf_s("%d",&a.iMau);
+}
+// Xuất hỗn số
+void Xuat(HonSo a)
+{
+    printf("%d %d/%d", a.iNguyen, a.iTu, a.iMau);
+    int main()
+{
+    PHANSO ps;
+    NhapHonso(HonSo &a);
+    XuatHonso(HonSo a);
+
+    
+
+    getch();
+    return 0;
+}
